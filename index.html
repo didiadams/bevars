@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bevars · Technology company</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+    .logo-icon {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: #111;
+      color: white;
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      letter-spacing: -0.02em;
+    }
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #111;
+    }
+    .logo-text span {
+      font-weight: 400;
+      color: #666;
+      font-size: 0.9rem;
+      margin-left: 0.25rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: #444;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    .hero {
+      max-width: 800px;
+      margin-bottom: 5rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    .product-section {
+      margin-bottom: 5rem;
+      padding-top: 1rem;
+    }
+
+    .product-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+    }
+
+    .product-tag {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .product-desc {
+      font-size: 1.125rem;
+      color: #333;
+      max-width: 700px;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-link {
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      color: #111;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .product-link:hover {
+      border-bottom-color: #111;
+    }
+
+    hr {
+      margin: 3rem 0;
+      border: none;
+      border-top: 1px solid #eaeaea;
+    }
+
+    .contact-block {
+      text-align: center;
+      margin: 4rem 0 3rem;
+      padding: 2rem 0;
+      border-top: 1px solid #eaeaea;
+    }
+
+    .contact-block p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .email-link, .phone-link {
+      color: #111;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #ccc;
+      margin: 0 0.25rem;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      padding: 2rem 0;
+      border-top: 1px solid #eaeaea;
+    }
+    .footer .reg-number {
+      margin-top: 0.5rem;
+      font-size: 0.7rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 2rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+      .product-title {
+        font-size: 1.75rem;
+      }
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="site-header">
+    <a href="/" class="logo">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">bevars</div>
+    </a>
+    <div class="nav-links">
+      <a href="#ratel">Ratel Security</a>
+      <a href="#trustlayer">TrustLayer Trade</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Technology company<br>building focused software.</h1>
+    <p>Bevars creates enterprise products for regulated industries – from AI‑powered AML compliance to fair, transparent trade coordination.</p>
+  </div>
+
+  <!-- Ratel Security -->
+  <div class="product-section" id="ratel">
+    <div class="product-tag">→ product</div>
+    <div class="product-title">Ratel Security</div>
+    <div class="product-desc">
+      Automated AML/CFT compliance for Nigerian banks and fintechs. Real‑time sanctions screening, transaction monitoring, and case management – purpose‑built for CBN compliance.
+    </div>
+    <ul class="feature-list" style="list-style: none; margin: 1.5rem 0 2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem;">
+      <li style="padding-left: 1.25rem; position: relative; color: #444;">Real‑time sanctions & PEP screening (UN, OFAC, EU, UK, local lists)</li>
+      <li style="padding-left: 1.25rem; position: relative; color: #444;">No‑code rule builder for risk teams</li>
+      <li style="padding-left: 1.25rem; position: relative; color: #444;">Behavioural analytics & transaction monitoring</li>
+      <li style="padding-left: 1.25rem; position: relative; color: #444;">Audit‑ready logs for CBN / NFIU inspections</li>
+      <li style="padding-left: 1.25rem; position: relative; color: #444;">Self‑hosted VPS – data stays in Nigeria</li>
+    </ul>
+    
+  </div>
+
+  <hr>
+
+  <!-- TrustLayer Trade (hidden details) -->
+  <div class="product-section" id="trustlayer">
+    <div class="product-tag">→ product</div>
+    <div class="product-title">TrustLayer Trade</div>
+    <div class="product-desc">
+      A digital platform that helps Nigerian exporters work together in clusters (by product category, like cassava or cocoa). Instead of individual exporters being picked off by foreign buyers, the cluster acts as one unit.
+    </div>
+    <div style="margin: 1rem 0 1.5rem; font-style: italic; color: #555;">"Turns scattered exporters into organized, powerful trade networks – and makes international trade fair, secure, and transparent for all."</div>
+    <a href="https://trustlayertrade.com" class="product-link">trustlayertrade.com →</a>
+  </div>
+
+  <!-- Contact with WhatsApp -->
+  <div class="contact-block" id="contact">
+    <p>For partnerships or pilot inquiries:<br>
+    <a href="mailto:hello@bevars.com" class="email-link">hello@bevars.com</a><br>
+    <a href="https://wa.me/234814104926" target="_blank" class="phone-link">+234 814 104 4926 (WhatsApp)</a></p>
+  </div>
+
+  <div class="footer">
+    <div>© 2026 Bevars · <a href="#" style="color: #888; text-decoration: none;">Privacy</a> · <a href="#" style="color: #888; text-decoration: none;">Terms</a></div>
+    <div class="reg-number">COMPANY REGISTRATION NO. 9456753</div>
+  </div>
+</div>
+
+</body>
+</html>
