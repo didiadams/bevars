@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bevars · Technology company</title>
+  <title>Bevars · Holding company</title>
   <style>
     * {
       margin: 0;
@@ -88,6 +88,14 @@
       margin-bottom: 5rem;
     }
 
+    .hero .kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: 700;
@@ -102,9 +110,22 @@
       line-height: 1.4;
     }
 
-    .product-section {
+    .section-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #666;
+      margin-bottom: 2.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .portfolio {
       margin-bottom: 5rem;
-      padding-top: 1rem;
+    }
+
+    .product-section {
+      margin-bottom: 3.5rem;
     }
 
     .product-title {
@@ -141,6 +162,27 @@
 
     .product-link:hover {
       border-bottom-color: #111;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1.5rem 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .feature-list li {
+      padding-left: 1.25rem;
+      position: relative;
+      color: #444;
+    }
+
+    .feature-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #aaa;
     }
 
     hr {
@@ -208,46 +250,70 @@
       <div class="logo-text">bevars</div>
     </a>
     <div class="nav-links">
-      <a href="#ratel">Ratel Security</a>
-      <a href="#trustlayer">TrustLayer Trade</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 
   <div class="hero">
-    <h1>Technology company<br>building focused software.</h1>
-    <p>Bevars creates enterprise products for regulated industries – from AI‑powered AML compliance to fair, transparent trade coordination.</p>
+    <div class="kicker">Holding company</div>
+    <h1>We build and own companies<br>securing finance and trade.</h1>
+    <p>Bevars is a holding company. We found, fund, and operate focused technology businesses for regulated industries – from AML compliance and threat intelligence to fair, transparent trade coordination.</p>
   </div>
 
-  <!-- Ratel Security -->
-  <div class="product-section" id="ratel">
-    <div class="product-tag">→ product</div>
-    <div class="product-title">Ratel Security</div>
-    <div class="product-desc">
-      Automated AML/CFT compliance for Nigerian banks and fintechs. Real‑time sanctions screening, transaction monitoring, and case management - purpose‑built for CBN compliance.
-    </div>
-    <ul class="feature-list" style="list-style: none; margin: 1.5rem 0 2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem;">
-      <li style="padding-left: 1.25rem; position: relative; color: #444;">Real‑time sanctions & PEP screening (UN, OFAC, EU, UK, local lists)</li>
-      <li style="padding-left: 1.25rem; position: relative; color: #444;">No‑code rule builder for risk teams</li>
-      <li style="padding-left: 1.25rem; position: relative; color: #444;">Behavioural analytics and transaction monitoring</li>
-      <li style="padding-left: 1.25rem; position: relative; color: #444;">Audit‑ready logs for CBN / NFIU inspections</li>
-      <li style="padding-left: 1.25rem; position: relative; color: #444;">Self‑hosted VPS – data stays in Nigeria</li>
-      <a href="https://ratel-docs.bevars.com/introduction" class="product-link">ratel-docs.bevars.com →</a>
-    </ul>
-    
-  </div>
+  <div class="portfolio" id="portfolio">
+    <div class="section-label">Our companies</div>
 
-  <hr>
-
-  <!-- TrustLayer Trade (hidden details) -->
-  <div class="product-section" id="trustlayer">
-    <div class="product-tag">→ product</div>
-    <div class="product-title">TrustLayer Trade</div>
-    <div class="product-desc">
-      A digital platform that helps Nigerian exporters work together in clusters (by product category, like cassava or cocoa). Instead of individual exporters being picked off by foreign buyers, the cluster acts as one unit.
+    <!-- Verifow -->
+    <div class="product-section" id="verifow">
+      <div class="product-tag">→ portfolio company</div>
+      <div class="product-title">Verifow</div>
+      <div class="product-desc">
+        The compliance layer for banks and fintechs: transaction monitoring, behavioral fraud detection, KYC/KYB, and sanctions screening behind one API – purpose-built for African regulators.
+      </div>
+      <ul class="feature-list">
+        <li>Real-time transaction monitoring with explainable verdicts in under 200ms</li>
+        <li>Behavioral intelligence – per-account trust scores and fraud-ring detection</li>
+        <li>KYC / KYB with sanctions & PEP screening (OFAC, EU, UK, UN, local lists)</li>
+        <li>AI rule builder – describe detection rules in plain English</li>
+        <li>Regulatory reporting – CTR, SAR, FTR in CBN-ready formats</li>
+        <li>Cloud or on-premise deployment with full data sovereignty</li>
+      </ul>
+      <a href="https://verifow.com" class="product-link">verifow.com →</a>
     </div>
-    <div style="margin: 1rem 0 1.5rem; font-style: italic; color: #555;">"Turns scattered exporters into organized, powerful trade networks – and makes international trade fair, secure, and transparent for all."</div>
-    <a href="https://trustlayertrade.com" class="product-link">trustlayertrade.com →</a>
+
+    <hr>
+
+    <!-- Intelfow -->
+    <div class="product-section" id="intelfow">
+      <div class="product-tag">→ portfolio company</div>
+      <div class="product-title">Intelfow</div>
+      <div class="product-desc">
+        Threat intelligence and vulnerability assessment (VAPT), unified in one platform. Detect external threats, take down phishing infrastructure, and find and fix vulnerabilities – with the evidence trail regulators and auditors expect.
+      </div>
+      <ul class="feature-list">
+        <li>Continuous monitoring of threat feeds, paste sites, and the dark web</li>
+        <li>Phishing takedowns with a 72-hour SLA</li>
+        <li>Vulnerability scanning restricted to ownership-verified targets</li>
+        <li>Full remediation lifecycle – open to remediated to retested</li>
+        <li>STIX / TAXII native, with a documented API</li>
+        <li>SOC 2 Type II and ISO 27001 certified</li>
+      </ul>
+      <a href="https://intelfow.com" class="product-link">intelfow.com →</a>
+    </div>
+
+    <hr>
+
+    <!-- TrustLayer Trade -->
+    <div class="product-section" id="trustlayer">
+      <div class="product-tag">→ portfolio company</div>
+      <div class="product-title">TrustLayer Trade</div>
+      <div class="product-desc">
+        A digital platform that helps Nigerian exporters work together in clusters (by product category, like cassava or cocoa). Instead of individual exporters being picked off by foreign buyers, the cluster acts as one unit.
+      </div>
+      <div style="margin: 1rem 0 1.5rem; font-style: italic; color: #555;">"Turns scattered exporters into organized, powerful trade networks – and makes international trade fair, secure, and transparent for all."</div>
+      <a href="https://trustlayertrade.com" class="product-link">trustlayertrade.com →</a>
+    </div>
   </div>
 
   <!-- Contact with WhatsApp -->
